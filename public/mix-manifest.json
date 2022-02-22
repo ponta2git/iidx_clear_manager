@@ -1,0 +1,22 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/common/ChartDetail.js": "/js/common/ChartDetail.js",
+    "/js/common/SetClearLamp.js": "/js/common/SetClearLamp.js",
+    "/js/common/SpecifyAbility.js": "/js/common/SpecifyAbility.js",
+    "/js/common/chartDetail/BarometerView.js": "/js/common/chartDetail/BarometerView.js",
+    "/js/common/chartDetail/ClearHistory.js": "/js/common/chartDetail/ClearHistory.js",
+    "/js/header/index.js": "/js/header/index.js",
+    "/js/scores/Chart.js": "/js/scores/Chart.js",
+    "/js/scores/ChartList.js": "/js/scores/ChartList.js",
+    "/js/scores/ChartListController.js": "/js/scores/ChartListController.js",
+    "/js/scores/ChartListHeader.js": "/js/scores/ChartListHeader.js",
+    "/js/scores/index.js": "/js/scores/index.js",
+    "/js/statistics/Widgets.js": "/js/statistics/Widgets.js",
+    "/js/statistics/index.js": "/js/statistics/index.js",
+    "/js/statistics/widgets/ClearLampDetails.js": "/js/statistics/widgets/ClearLampDetails.js",
+    "/js/statistics/widgets/ClearResultsChanges.js": "/js/statistics/widgets/ClearResultsChanges.js",
+    "/js/statistics/widgets/CpiResultsDetails.js": "/js/statistics/widgets/CpiResultsDetails.js",
+    "/js/statistics/widgets/DanILamps.js": "/js/statistics/widgets/DanILamps.js",
+    "/js/statistics/widgets/RecommendCharts.js": "/js/statistics/widgets/RecommendCharts.js"
+}

@@ -1,0 +1,482 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-gray-700 bg-gray-200;
+}
+
+#header {
+    @apply bg-gray-700 text-white mb-4 shadow-md;
+}
+
+.header-top {
+    @apply relative;
+
+    div {
+        @apply absolute top-0 right-0 pr-4 pt-2;
+    }
+}
+
+.header-bottom {
+    ul {
+        @apply flex flex-row justify-center pb-2;
+
+        li {
+            @apply mx-4;
+        }
+    }
+}
+
+h1 {
+    @apply text-xl text-center py-2;
+    font-family: 'Poiret One', cursive;
+}
+
+h2 {
+    @apply text-lg font-bold;
+}
+
+h3 {
+    @apply font-bold mb-2;
+}
+
+.box {
+    @apply max-w-xl mx-auto rounded shadow-sm border-2 mb-3 bg-white;
+}
+
+.box-header {
+    @apply p-2 bg-blue-200;
+}
+
+.box-content {
+    @apply p-4;
+}
+
+form {
+    @apply py-2;
+}
+
+#login-form {
+    @apply max-w-xs mx-auto;
+}
+
+.setting-box-content {
+    @apply relative;
+}
+
+.setting-box-background {
+    @apply text-gray-200 text-right absolute bottom-0 right-0;
+    opacity: 0.5;
+}
+
+.tab {
+    @apply flex border-b;
+}
+
+.tab-content {
+    @apply px-2 py-2;
+}
+
+.tab-active {
+    @apply -mb-px mr-1;
+}
+
+.tab-inactive {
+    @apply mr-1;
+}
+
+.tab-active-content {
+    @apply bg-white inline-block border-l border-r border-t rounded-t py-2 px-2 text-blue-700 font-semibold;
+}
+
+.tab-inactive-content {
+    @apply bg-white inline-block py-2 px-2 text-blue-500 font-semibold;
+    &:hover {
+        @apply text-blue-800;
+    }
+}
+
+
+.lamp-failed {
+    @apply bg-gray-500;
+}
+
+.lamp-assist {
+    @apply bg-purple-500;
+}
+
+.lamp-easy {
+    @apply bg-green-500;
+}
+
+.lamp-clear {
+    @apply bg-blue-500;
+}
+
+.lamp-hard {
+    @apply bg-red-500;
+}
+
+.lamp-exh {
+    @apply bg-yellow-500;
+}
+
+.lamp-fc {
+    @apply bg-orange-500;
+}
+
+.chart-box {
+    @apply py-1;
+}
+
+.chart-box-header {
+    @apply sticky top-0 bg-gray-700 text-white;
+}
+
+.chart-excerpt {
+    @apply flex flex-row m-2;
+    
+    .lamp {
+        @apply rounded-full h-3 w-3 flex justify-center self-center shadow-inner;
+    }
+
+    .chart-info {
+        @apply w-full pl-2;
+    }
+
+    .carets {
+        @apply h-3 w-3 flex justify-center self-center text-gray-400;
+    }
+}
+
+.clear-lamp {
+    @apply flex flex-wrap justify-center;
+
+    div {
+        @apply w-12 h-12 m-2 shadow-md;
+
+        p {
+            @apply w-full h-full text-center text-sm;
+        }
+    }
+}
+
+.chart-aside {
+    @apply text-gray-500 text-xs;
+}
+
+.chart-header {
+    @apply ml-1 p-2 font-bold;
+}
+
+.histories {
+    @apply m-2;
+
+    .history {
+        @apply relative flex flex-row justify-items-center place-items-center w-full h-24;
+
+        .date-container {
+            @apply w-24 h-20 flex-grow-0 relative;
+
+            .date {
+                @apply flex flex-col items-center place-content-center absolute h-20 w-20 rounded-full border leading-none;
+
+                .date-year {
+                    @apply text-xs text-gray-500 mb-1;
+                }
+
+                .date-day {
+                    @apply text-lg text-gray-700;
+                }
+            }
+        }
+        .recent-noplay {
+            @apply border-white;
+        }
+
+        .recent-failed {
+            @apply border-gray-500;
+        }
+
+        .recent-assist {
+            @apply border-purple-500;
+        }
+
+        .recent-easy {
+            @apply border-green-500;
+        }
+
+        .recent-clear {
+            @apply border-blue-500;
+        }
+
+        .recent-hard {
+            @apply border-red-500;
+        }
+
+        .recent-exh {
+            @apply border-yellow-500;
+        }
+
+        .recent-fc {
+            @apply border-orange-500;
+        }
+
+        .content-container {
+            @apply w-full h-16 ml-8 border-l-4 pl-4 shadow-md;
+
+            .content-header {
+                @apply flex w-full;
+    
+                .date-time {
+                    @apply w-2/3 mx-0 text-sm text-gray-500;
+                }
+    
+                .delete-button {
+                    @apply w-1/3 text-right mx-0 mr-2 text-gray-500;
+                }
+            }
+        }
+    }
+}
+
+
+
+.barometers {
+    @apply flex flex-row flex-wrap justify-center;
+}
+
+.barometer {
+    @apply w-20 mx-2 text-center mb-2;
+}
+
+.barometer-name {
+    @apply text-center;
+}
+
+.barometer-iscompleted {
+    @apply h-12 relative mb-1;
+}
+
+.barometer-value {
+    @apply absolute inset-x-0 bottom-0 h-8;
+
+    p {
+        @apply font-bold;
+        margin-left: -1px;
+    }
+}
+
+.widgets-guide {
+    @apply max-w-xl mx-auto;
+}
+
+.widget-2 {
+    @apply flex flex-row flex-no-wrap flex-shrink justify-between;
+}
+
+.widget-half {
+    @apply w-64 h-32;
+}
+
+.widget-content {
+    h2 {
+        @apply text-sm pb-2;
+    }
+}
+
+.lamp-info {
+    @apply flex flex-row flex-no-wrap flex-shrink z-10 mb-2;
+}
+
+.lampdetails {
+    @apply w-2/3 flex flex-row flex-wrap z-10;
+}
+
+.everylamp {
+    @apply h-8 flex flex-row z-10 m-1;
+}
+
+.lamp-title {
+    @apply w-10 z-10 text-center p-1;
+}
+
+.lamp-count {
+    @apply w-10 z-10 text-right p-1;
+}
+
+.lamptotal {
+    @apply w-1/3 pr-2 z-10 flex flex-col flex-no-wrap justify-center;
+}
+
+.cleared {
+    @apply text-3xl font-bold text-center;
+}
+
+.total {
+    @apply text-sm text-gray-500 text-right;
+}
+
+
+
+#clearlampdetails {
+    @apply relative overflow-hidden;
+
+    .widget-content {
+        @apply z-10;
+    }
+}
+
+#clearlampdetails-graph {
+    @apply absolute w-full bottom-0 inset-x-0 ml-2;
+    margin-bottom: 0.15rem;
+}
+
+
+#clearresultschanges {
+    @apply relative overflow-hidden;
+
+    .widget-content {
+        @apply z-10;
+    }
+}
+
+#clearresultschanges-graph {
+    @apply absolute w-full bottom-0 inset-x-0 -ml-1;
+    margin-bottom: -0.65rem;
+}
+
+.number-content {
+    @apply flex flex-col flex-no-wrap justify-center z-10;
+}
+
+.main-number {
+    @apply text-center text-3xl font-bold z-10;
+}
+
+.sub-number {
+    @apply text-center text-xs z-10;
+}
+
+.plus-num {
+    @apply text-green-500;
+}
+
+.minus-num {
+    @apply text-red-500;
+}
+
+
+.recommend {
+    @apply flex flex-row flex-no-wrap flex-shrink;
+}
+
+.recommend-chart {
+    @apply w-9/12;
+}
+
+.now-lamp {
+    @apply w-1/12;
+}
+
+.try-arrow {
+    @apply w-1/12 text-center self-center;
+}
+
+.try-lamp {
+    @apply w-1/12;
+}
+
+.dan_i {
+    @apply text-center text-3xl font-bold font-serif;
+}
+
+.dan_i_from {
+    @apply text-center text-xs;
+}
+
+.form-group {
+    @apply mb-4;
+}
+
+.input-info {
+    @apply flex flex-row flex-wrap items-baseline;
+    
+    label {
+        @apply block text-sm font-bold mb-2;
+    }
+
+    .input-helper {
+        @apply text-gray-500 text-xs pl-2;   
+    }
+}
+
+
+input[type=text], input[type=password] {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+
+    &:focus {
+        @apply outline-none shadow-outline;
+    }
+
+    &:read-only {
+        @apply bg-gray-200;
+    }
+}
+
+input[type=checkbox] {
+    @apply mr-1;
+}
+
+#input-new-password {
+    @apply hidden;
+}
+
+.error {
+    @apply border-red-500;
+}
+
+.form-buttons {
+    @apply text-center;
+}
+
+.btn-ok {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+
+    &:hover {
+        @apply bg-blue-700;
+    }
+
+    &:focus {
+        @apply outline-none shadow-outline;
+    }
+}
+
+.for-detail {
+    @apply mr-2 text-sm text-gray-500 text-right;
+}
+
+.with-icon {
+    @apply align-middle;
+}
+
+.errormsg {
+    @apply pt-2 text-red-500 text-xs;
+}
+
+.successmsg {
+    @apply pt-2 text-green-500 text-xs;
+}
+
+#logout {
+    @apply text-gray-500 text-xs text-right;
+}
+
+footer {
+    @apply text-center text-gray-500 text-xs;
+}
+
+#listloading {
+    @apply text-center text-gray-500 p-2 text-sm;
+}
